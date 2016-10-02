@@ -1,0 +1,138 @@
+body {
+  background: url('bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.box {
+  width: auto;
+  border: 1px black  solid;
+  background-color: #f3f3f3;
+  position: static;
+}
+/* Background Image from: https://unsplash.com/new?photo=EcZSMO-TNuc */
+#titleBox {
+  height: 25%;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: 1px solid black;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+#titleBox input, label {
+  background: linear-gradient(115deg, #2ceab9, #30a306, #139edf, #9d37b4);
+  background-size: 800% 800%;
+  font-family: 'Exo 2', Arial;
+  font-size: 24px;
+  -webkit-animation: InputLabel 5s ease infinite;
+  -moz-animation: InputLabel 5s ease infinite;
+  animation: InputLabel 5s ease infinite;
+}
+
+@-webkit-keyframes InputLabel {
+  0% {
+    background-position: 13% 0%
+  }
+  50% {
+    background-position: 88% 100%
+  }
+  100% {
+    background-position: 13% 0%
+  }
+}
+
+@-moz-keyframes InputLabel {
+  0% {
+    background-position: 13% 0%
+  }
+  50% {
+    background-position: 88% 100%
+  }
+  100% {
+    background-position: 13% 0%
+  }
+}
+
+@keyframes InputLabel {
+  0% {
+    background-position: 13% 0%
+  }
+  50% {
+    background-position: 88% 100%
+  }
+  100% {
+    background-position: 13% 0%
+  }
+}
+
+
+#titleBox label {
+  text-align: center;
+    width: 24%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 2%;
+    margin-top: 15%;
+}
+
+#inputFileToLoad {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#experienceBox {
+  height: 50%;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: 1px solid black;
+  background-color: #f3f3f3;
+}
+
+#experienceBox img {
+  max-width: 75%;
+  max-height: 75%;
+  display: block;
+  margin: auto;
+  padding: 10%;
+}
+
+#linkBox {
+  height: 50%;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: 1px solid black;
+  background-color: #f3f3f3;
+
+}
+
+#linkBox input {
+  font-family: 'Exo 2', Arial;
+  display: block;
+  margin: auto;
+  width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+    padding: 0 10px;
+  text-align:center;
+}
+
+ h1 {
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+#titleBox p {
+  text-align: center;
+  font-size: 24px;
+}
