@@ -8,6 +8,7 @@ function loadFile() {
       	base64Img = reader.result;
         $.ajax({
           type: 'POST',
+            // See @app.route("/genImage", methods=['POST']) in backend file to see how this works
           url: "/genImage",
           data: JSON.stringify({img:base64Img}),
           contentType: 'application/json;charset=UTF-8',
@@ -20,6 +21,7 @@ function loadFile() {
         });
       }, false);
      if (file) {
+         // convert file to base64 for ajax json post to Flask
        reader.readAsDataURL(file);
    }
 }
