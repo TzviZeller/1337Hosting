@@ -1,0 +1,98 @@
+*{margin: 0; padding: 0; font-family: 'Abel', sans-serif;}
+*:focus{ outline: none; }
+
+nav{
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background: #212121;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+body{
+}
+
+.float-left{ float: left; }
+.float-right{ float: right; }
+
+.float-li-left li{ float: left; }
+.float-li-right li{ float: right; }
+
+.row-wide{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flex-contain{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item{
+  position: relative;
+  flex: auto;
+}
+
+.menu-item ul{
+  list-style: none;
+}
+
+.menu-item li{
+  display: block;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+#upload{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+#upload-icon{
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: url('../imgs/Upload.svg') repeat-y;
+  background-size: contain;
+  background-position: 0% 0%;
+  transition: background-position 375ms ease-in-out;
+}
+
+#upload:hover #upload-icon{
+  background-position: 0% 100%;
+}
+
+.main-body{
+}
+
+.social img{
+  float: left;
+  padding: 6px 5px 0 5px;
+  width: 35px;
+  max-height: 35px;
+}
+
+header{
+  margin-top: 50px;
+  height: 600px;
+  width: 100%;
+  background: linear-gradient(0deg, #f3c9b2, #614973);
+}
+
+@media screen and (max-width: 1400px) {
+  .row-wide{
+    max-width: 1200px;
+    padding: 0 10px;
+  }
+}
