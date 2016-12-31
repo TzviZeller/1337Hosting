@@ -19,12 +19,11 @@
 
 
             <div id="titleBox" class="mdl-cell mdl-cell--4-col mdl-shadow--2dp">
-                <h4>1337Simple Web Hosting</h4>
-                  <form class="input-group" id="img2b64">
-                      <input id="inputFileToLoad" value="Upload" type="file" onchange="loadFile()" action="/genImage" />
-                      <label for="inputFileToLoad">Upload</label>
-                  </form>
-
+                   {% if file1 %}
+                    <h1>404! {{ file1 }}!</h1>
+                    {% else %}
+                   <h1>404!</h1>
+                   {% endif %}
             </div>
     </main>
 
