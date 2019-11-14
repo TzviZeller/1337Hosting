@@ -6,6 +6,7 @@ function loadFile() {
 
       reader.addEventListener("load", function () {
       	base64Img = reader.result;
+      	console.log(`Img: ${base64Img}`);
         $.ajax({
           type: 'POST',
             // See @app.route("/genImage", methods=['POST']) in backend file to see how this works
@@ -13,7 +14,9 @@ function loadFile() {
           data: JSON.stringify({img:base64Img}),
           contentType: 'application/json;charset=UTF-8',
           success: function(data) {
-           location.href = "http://104.131.183.72/gallery/" + data;
+              console.log(data);
+              alert(data.toString());
+           location.href = "/gallery/" + data.new_gallery_id;
          },
           error: function(error) {
                 console.log(error);
